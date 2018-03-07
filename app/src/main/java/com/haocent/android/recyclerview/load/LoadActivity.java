@@ -22,7 +22,7 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * 上拉加载 的 Activity
  *
- * 关键字：addOnScrollListener
+ * 关键字：addOnScrollListene
  *
  * Created by Tnno Wu on 2018/03/06.
  */
