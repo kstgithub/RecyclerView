@@ -92,6 +92,12 @@
             android:label="RecyclerView item 居中对齐"
             android:screenOrientation="portrait" />
 
+        <!-- 展开和收缩 -->
+        <activity
+            android:name=".expandcollapse.ExpandCollapseActivity"
+            android:label="展开和收缩"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
