@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".load.LoadActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,55 +20,71 @@
             </intent-filter>
         </activity>
 
+        <!-- 纵向布局 -->
         <activity
             android:name=".vertical.VerticalActivity"
             android:label="纵向布局"
             android:screenOrientation="portrait" />
 
+        <!-- 横向布局 -->
         <activity
             android:name=".horizontal.HorizontalActivity"
             android:label="横向布局"
             android:screenOrientation="portrait" />
 
+        <!-- 网格布局 -->
         <activity
             android:name=".grid.GridActivity"
             android:label="网格布局"
             android:screenOrientation="portrait" />
 
+        <!-- Item 点击 -->
         <activity
             android:name=".click.RcvClickActivity"
             android:label="Item 点击"
             android:screenOrientation="portrait" />
 
+        <!-- 分组 -->
         <activity
             android:name=".group.GroupActivity"
             android:label="分组"
             android:screenOrientation="portrait" />
 
+        <!-- 顶部悬浮 -->
         <activity
             android:name=".section.SectionActivity"
             android:label="顶部悬浮"
             android:screenOrientation="portrait" />
 
+        <!-- Item 拖动 -->
         <activity
             android:name=".drag.DragActivity"
             android:label="Item 拖动"
             android:screenOrientation="portrait" />
 
+        <!-- 滑动删除 -->
         <activity
             android:name=".swipe.SwipeActivity"
             android:label="滑动删除"
             android:screenOrientation="portrait" />
 
+        <!-- 下拉刷新 -->
         <activity
             android:name=".refresh.RefreshActivity"
             android:label="下拉刷新"
             android:screenOrientation="portrait" />
 
-        <!--<activity-->
-            <!--android:name=".load.LoadActivity"-->
-            <!--android:label="上拉加载"-->
-            <!--android:screenOrientation="portrait" />-->
+        <!-- 上拉加载 -->
+        <activity
+            android:name=".load.LoadActivity"
+            android:label="上拉加载"
+            android:screenOrientation="portrait" />
+
+        <!-- 双向滑动 -->
+        <activity
+            android:name=".slide.SlideActivity"
+            android:label="双向滑动"
+            android:screenOrientation="portrait" />
 
     </application>
 
