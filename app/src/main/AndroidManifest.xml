@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haocent.android.recyclerview">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".load.LoadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".vertical.VerticalActivity"
+            android:label="纵向布局"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".horizontal.HorizontalActivity"
+            android:label="横向布局"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".grid.GridActivity"
+            android:label="网格布局"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".click.RcvClickActivity"
+            android:label="Item 点击"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".group.GroupActivity"
+            android:label="分组"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".section.SectionActivity"
+            android:label="顶部悬浮"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".drag.DragActivity"
+            android:label="Item 拖动"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".swipe.SwipeActivity"
+            android:label="滑动删除"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".refresh.RefreshActivity"
+            android:label="下拉刷新"
+            android:screenOrientation="portrait" />
+
+        <!--<activity-->
+            <!--android:name=".load.LoadActivity"-->
+            <!--android:label="上拉加载"-->
+            <!--android:screenOrientation="portrait" />-->
+
+    </application>
+
+</manifest>
