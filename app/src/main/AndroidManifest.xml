@@ -86,6 +86,12 @@
             android:label="双向滑动"
             android:screenOrientation="portrait" />
 
+        <!-- RecyclerView item 居中对齐 -->
+        <activity
+            android:name=".snaphelper.SnapHelperActivity"
+            android:label="RecyclerView item 居中对齐"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
