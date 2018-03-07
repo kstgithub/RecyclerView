@@ -20,6 +20,8 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * 下拉刷新 的 Activity
  *
+ * 关键字：setOnRefreshListener
+ *
  * Created by Tnno Wu on 2018/03/06.
  */
 
