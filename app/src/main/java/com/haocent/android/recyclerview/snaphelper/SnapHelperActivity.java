@@ -16,6 +16,8 @@ import java.util.List;
 /**
  * RecyclerView item 居中对齐 的 Activity
  *
+ * 关键字：SnapHelper
+ *
  * Created by Tnno Wu on 2018/03/07.
  */
 
