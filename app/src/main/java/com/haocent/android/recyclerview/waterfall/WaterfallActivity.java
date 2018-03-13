@@ -21,6 +21,8 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * 瀑布流 的 Activity
  *
+ * 关键字：StaggeredGridLayoutManager
+ *
  * Created by Tnno Wu on 2018/03/13.
  */
 
