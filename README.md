@@ -52,6 +52,10 @@ RecyclerView item 居中对齐：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/expandcollapse
 </br>
 </br>
+瀑布流：
+</br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/waterfall
+</br>
+</br>
 
 ### License
 ```
