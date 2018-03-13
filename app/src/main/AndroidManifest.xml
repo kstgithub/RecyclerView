@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -96,6 +98,12 @@
         <activity
             android:name=".expandcollapse.ExpandCollapseActivity"
             android:label="展开和收缩"
+            android:screenOrientation="portrait" />
+
+        <!-- 瀑布流 -->
+        <activity
+            android:name=".waterfall.WaterfallActivity"
+            android:label="瀑布流"
             android:screenOrientation="portrait" />
 
     </application>
