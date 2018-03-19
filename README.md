@@ -44,7 +44,7 @@ Item 拖动：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/slide
 </br>
 </br>
-RecyclerView item 居中对齐：
+居中对齐：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/snaphelper
 </br>
 </br>
