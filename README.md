@@ -56,6 +56,10 @@ RecyclerView item 居中对齐：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/waterfall
 </br>
 </br>
+时间轴：
+</br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/timeline
+</br>
+</br>
 
 ### License
 ```
