@@ -106,6 +106,12 @@
             android:label="瀑布流"
             android:screenOrientation="portrait" />
 
+        <!-- 时间轴 -->
+        <activity
+            android:name=".timeline.TimelineActivity"
+            android:label="时间轴"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

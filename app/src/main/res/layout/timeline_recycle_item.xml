@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="32dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_header_line"
+            android:layout_width="0.5dp"
+            android:layout_height="12dp"
+            android:layout_centerHorizontal="true"
+            android:background="#888" />
+
+        <TextView
+            android:id="@+id/tv_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/tv_header_line"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/timeline_dot_normal" />
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_dot"
+            android:layout_centerHorizontal="true"
+            android:background="#888" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="6dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#888"
+            android:textSize="16sp"
+            tools:text="2018-03-13 12:15:31" />
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="5dp"
+            android:textColor="#888"
+            android:textSize="14sp"
+            tools:text="[大连市] 快件已在 [大连兴工街] 签收,签收人: 拍照签收, 感谢使用中通快递,期待再次为您服务!" />
+
+    </RelativeLayout>
+
+</LinearLayout>
