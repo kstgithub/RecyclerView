@@ -118,6 +118,12 @@
             android:label="为 RecyclerView 添加 Footer"
             android:screenOrientation="portrait" />
 
+        <!-- 为 RecyclerView 添加 Header -->
+        <activity
+            android:name=".header.HeaderActivity"
+            android:label="为 RecyclerView 添加 Header"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
