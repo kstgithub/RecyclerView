@@ -60,7 +60,7 @@ Item 拖动：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/timeline
 </br>
 </br>
-为 RecyclerView 添加 Footer：
+为 RecyclerView 添加 Footer（包含 List 样式 和 网格样式）：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/footer
 </br>
 </br>
