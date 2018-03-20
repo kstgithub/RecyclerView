@@ -112,6 +112,12 @@
             android:label="时间轴"
             android:screenOrientation="portrait" />
 
+        <!-- 为 RecyclerView 添加 Footer -->
+        <activity
+            android:name=".footer.FooterActivity"
+            android:label="为 RecyclerView 添加 Footer"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
