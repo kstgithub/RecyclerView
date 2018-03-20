@@ -60,6 +60,10 @@ Item 拖动：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/timeline
 </br>
 </br>
+为 RecyclerView 添加 Footer：
+</br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/footer
+</br>
+</br>
 
 ### License
 ```
