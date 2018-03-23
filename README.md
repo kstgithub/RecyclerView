@@ -21,7 +21,7 @@ Item 点击：
 </br>
 </br>
 顶部悬浮：
-</br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/section
+</br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/sticky
 </br>
 </br>
 Item 拖动：
