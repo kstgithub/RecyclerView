@@ -1,16 +1,16 @@
-package com.haocent.android.recyclerview.section;
+package com.haocent.android.recyclerview.sticky;
 
 /**
  * 顶部悬浮 的 实体类
  *
- * Created by Tnno Wu on 2018/03/05.
+ * Created by Tnno Wu on 2018/03/23.
  */
 
-public class SectionDataBean {
+public class StickyData {
 
-    private String area;
+    public String area;
 
-    private String team;
+    public String team;
 
     public String getArea() {
         return area;

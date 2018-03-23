@@ -54,7 +54,7 @@
 
         <!-- 顶部悬浮 -->
         <activity
-            android:name=".section.SectionActivity"
+            android:name=".sticky.StickyActivity"
             android:label="顶部悬浮"
             android:screenOrientation="portrait" />
 

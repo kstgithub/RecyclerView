@@ -1,4 +1,4 @@
-package com.haocent.android.recyclerview.section;
+package com.haocent.android.recyclerview.sticky;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import com.haocent.android.recyclerview.R;
 
@@ -15,25 +17,21 @@ import java.util.List;
 /**
  * 顶部悬浮 的 Activity
  *
- * 关键字：ItemDecoration
- *
- * Created by Tnno Wu on 2018/03/05.
+ * Created by Tnno Wu on 2018/03/23.
  */
 
-public class SectionActivity extends AppCompatActivity {
+public class StickyActivity extends AppCompatActivity {
 
-    private static final String TAG = SectionActivity.class.getSimpleName();
+    private static final String TAG = StickyActivity.class.getSimpleName();
 
     private List<String> mList = new ArrayList<>();
 
-    private List<SectionDataBean> mDataList = new ArrayList<>();
-
-    private SectionItemDecoration mDecoration;
+    private List<StickyData> mDataList = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.section_activity);
+        setContentView(R.layout.sticky_activity);
 
         initList();
 
@@ -77,7 +75,7 @@ public class SectionActivity extends AppCompatActivity {
 
     private void initData() {
         for (int i = 0; i < mList.size(); i++) {
-            SectionDataBean bean = new SectionDataBean();
+            StickyData bean = new StickyData();
 
             String s = mList.get(i);
             // area
@@ -95,15 +93,48 @@ public class SectionActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        SectionAdapter adapter = new SectionAdapter(this);
+        StickyAdapter adapter = new StickyAdapter(this);
 
-        RecyclerView rcvHeader = findViewById(R.id.rcv_section);
+        RecyclerView rcvSticky = findViewById(R.id.rcv_sticky);
+        final TextView tvArea = findViewById(R.id.tv_sticky_header_view);
 
-        rcvHeader.setLayoutManager(new LinearLayoutManager(this));
-        rcvHeader.setHasFixedSize(true);
-        rcvHeader.addItemDecoration(mDecoration = new SectionItemDecoration(this, mDataList));
-        rcvHeader.setAdapter(adapter);
+        rcvSticky.setLayoutManager(new LinearLayoutManager(this));
+        rcvSticky.setHasFixedSize(true);
+        rcvSticky.setAdapter(adapter);
 
-        adapter.setHeaderDataList(mDataList);
+        adapter.setStickyDataList(mDataList);
+
+        rcvSticky.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                View stickyInfoView = recyclerView.findChildViewUnder(
+                        tvArea.getMeasuredWidth() / 2, 5);
+
+                if (stickyInfoView != null && stickyInfoView.getContentDescription() != null) {
+                    tvArea.setText(String.valueOf(stickyInfoView.getContentDescription()));
+                }
+
+                View transInfoView = recyclerView.findChildViewUnder(
+                        tvArea.getMeasuredWidth() / 2, tvArea.getMeasuredHeight() + 1);
+
+                if (transInfoView != null && transInfoView.getTag() != null) {
+
+                    int transViewStatus = (int) transInfoView.getTag();
+                    int dealtY = transInfoView.getTop() - tvArea.getMeasuredHeight();
+
+                    if (transViewStatus == StickyAdapter.HAS_STICKY_VIEW) {
+                        if (transInfoView.getTop() > 0) {
+                            tvArea.setTranslationY(dealtY);
+                        } else {
+                            tvArea.setTranslationY(0);
+                        }
+                    } else if (transViewStatus == StickyAdapter.NONE_STICKY_VIEW) {
+                        tvArea.setTranslationY(0);
+                    }
+                }
+            }
+        });
     }
 }
