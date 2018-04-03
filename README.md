@@ -68,6 +68,10 @@ Item 拖动：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/header
 </br>
 </br>
+左右联动：
+</br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/link
+</br>
+</br>
 
 ### License
 ```
