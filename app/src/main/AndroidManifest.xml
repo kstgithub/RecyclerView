@@ -124,6 +124,12 @@
             android:label="为 RecyclerView 添加 Header"
             android:screenOrientation="portrait" />
 
+        <!-- 左右联动 -->
+        <activity
+            android:name=".link.LinkActivity"
+            android:label="左右联动"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
