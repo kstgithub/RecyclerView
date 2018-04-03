@@ -17,7 +17,7 @@ public class CityAreaAdapter extends RecyclerView.Adapter<CityAreaAdapter.CityAr
 
     private Context mContext;
 
-    private List<String> mSortList;
+    private List<String> mAreaList;
 
     private int checkedPosition;
 
@@ -29,7 +29,7 @@ public class CityAreaAdapter extends RecyclerView.Adapter<CityAreaAdapter.CityAr
     }
 
     public void setCityAreaList(List<String> list) {
-        mSortList = list;
+        mAreaList = list;
 
         notifyDataSetChanged();
     }
@@ -48,11 +48,11 @@ public class CityAreaAdapter extends RecyclerView.Adapter<CityAreaAdapter.CityAr
 
     @Override
     public void onBindViewHolder(@NonNull CityAreaViewHolder holder, final int position) {
-        holder.tvName.setText(mSortList.get(position));
+        holder.tvName.setText(mAreaList.get(position));
 
         if (position == checkedPosition) {
-            holder.itemView.setBackgroundColor(Color.parseColor("#F3F3F3"));
-            holder.tvName.setTextColor(Color.parseColor("#0068CF"));
+            holder.itemView.setBackgroundColor(Color.parseColor("#F0F0F0"));
+            holder.tvName.setTextColor(Color.parseColor("#3F51B5"));
         } else {
             holder.itemView.setBackgroundColor(Color.parseColor("#FFFFFF"));
             holder.tvName.setTextColor(Color.parseColor("#1E1D1D"));
@@ -68,7 +68,7 @@ public class CityAreaAdapter extends RecyclerView.Adapter<CityAreaAdapter.CityAr
 
     @Override
     public int getItemCount() {
-        return mSortList == null ? 0 : mSortList.size();
+        return mAreaList == null ? 0 : mAreaList.size();
     }
 
     public class CityAreaViewHolder extends RecyclerView.ViewHolder {

@@ -34,6 +34,14 @@ public class CityCinemaFragment extends Fragment implements CheckListener, CityC
 
     private CheckListener checkListener;
 
+    public CityCinemaFragment() {
+
+    }
+
+    public static CityCinemaFragment newInstance() {
+        return new CityCinemaFragment();
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,

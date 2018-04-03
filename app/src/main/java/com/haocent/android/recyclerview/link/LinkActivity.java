@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 联动
- *
+ * <p>
  * Created by Tnno Wu on 2018/04/03.
  */
 
@@ -101,7 +101,7 @@ public class LinkActivity extends AppCompatActivity implements CheckListener, Ci
 
     public void createFragment() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        mFragment = new CityCinemaFragment();
+        mFragment = CityCinemaFragment.newInstance();
         Bundle bundle = new Bundle();
         bundle.putParcelableArrayList("right", cityArea.getCategoryOneArray());
         mFragment.setArguments(bundle);
