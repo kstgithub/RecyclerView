@@ -1,7 +1,7 @@
 # 纵向布局
 
 示例图：
-![image](https://github.com/cnwutianhao/RecyclerView/blob/master/screenshots/%E7%BA%B5%E5%90%91%E5%B8%83%E5%B1%80.gif)
+</br>![image](https://github.com/cnwutianhao/RecyclerView/blob/master/screenshots/%E7%BA%B5%E5%90%91%E5%B8%83%E5%B1%80.gif)
 
 ### License
 ```
