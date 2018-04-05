@@ -1,4 +1,4 @@
-# RecyclerView 总结
+# RecyclerView 使用方法总结
 
 纵向布局：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/vertical
