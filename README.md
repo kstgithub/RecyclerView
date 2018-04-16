@@ -1,4 +1,4 @@
-# RecyclerView 总结
+# RecyclerView 使用方法总结
 
 纵向布局：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/vertical
@@ -71,6 +71,10 @@ Item 拖动：
 左右联动：
 </br>https://github.com/cnwutianhao/RecyclerView/tree/master/app/src/main/java/com/haocent/android/recyclerview/link
 </br>
+</br>
+
+文章地址：
+</br>https://www.jianshu.com/p/c4cfe38a91ed
 </br>
 
 ### License
